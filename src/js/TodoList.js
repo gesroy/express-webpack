@@ -5,9 +5,12 @@ const form = get('form')
 export default class TodoList {
   constructor() {
     this.savedTodosContainer = get('[data-js=saved-todos]')
-
     this.getTodos()
     form.addEventListener('submit', event => this.onSubmit(event))
+  }
+
+  deleteTodoFromPage(index) {
+    data = [...data.slice(0, index), ...data.slice(index + 1)]
   }
 
   onSubmit(event, data) {
@@ -46,7 +49,7 @@ export default class TodoList {
       this.todoHtml = `
       <input type="checkbox">
       <span>${todo.todo}</span>
-      <button>&times;</button>
+      <button data-js="delete-button">&times;</button>
        `
       this.todoEl.innerHTML = this.todoHtml
       this.savedTodosContainer.insertAdjacentElement('beforeend', this.todoEl)
