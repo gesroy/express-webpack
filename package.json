@@ -1,0 +1,35 @@
+{
+  "name": "express-intro",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "run-p express webpack",
+    "express": "nodemon --inspect -w bin -w routes -w views ./bin/www",
+    "now-start": "NODE_ENV=production node ./bin/www",
+    "webpack": "webpack"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "uid": "0.0.2"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.3",
+    "babel-loader": "7.1.5",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "browser-sync": "2.24.6",
+    "connect-browser-sync": "2.1.0",
+    "node-sass-middleware": "0.11.0",
+    "nodemon": "1.18.3",
+    "npm-run-all": "4.1.3",
+    "uglifyjs-webpack-plugin": "1.2.7",
+    "webpack": "4.16.5",
+    "webpack-cli": "3.1.0"
+  }
+}
