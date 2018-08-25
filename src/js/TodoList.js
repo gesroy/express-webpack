@@ -13,6 +13,7 @@ export default class TodoList {
     const input = get('input')
     event.preventDefault()
     this.sendTodo(input.value, data => this.renderTodos(data))
+    input.value = ''
   }
 
   sendTodo(data, callback) {

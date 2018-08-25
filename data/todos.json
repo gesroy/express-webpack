@@ -1,14 +1,9 @@
 [
-  { "todo": "1", "id": "ckboj0u" },
-  { "todo": "2", "id": "w2wue67" },
-  { "todo": "3", "id": "pa04lfi" },
-  { "todo": "4", "id": "qy1yk1u" },
-  { "todo": "5", "id": "hnpvqtp" },
-  { "todo": "6", "id": "cexsxkg" },
-  { "todo": "Milch", "id": "rdeyue8" },
-  { "todo": "Pfeffer", "id": "albu2mj" },
-  { "todo": "Pfeffer", "id": "d1faaxs" },
-  { "todo": "Wurst", "id": "u7bgwhj" },
-  { "todo": "foo", "id": "kjle9o9" },
-  { "todo": "Lara", "id": "rbn37gr" }
+  { "todo": "Pfeffer", "id": "w7j7wh9" },
+  { "todo": "Tofu", "id": "mbtfye7" },
+  { "todo": "Sahne", "id": "iktd52b" },
+  { "todo": "Tee", "id": "q0livo1" },
+  { "todo": "Milch", "id": "fofyfg7" },
+  { "todo": "Wurst", "id": "2u5imxg" },
+  { "todo": "Salz", "id": "9ovmml9" }
 ]
