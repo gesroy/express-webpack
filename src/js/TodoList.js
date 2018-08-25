@@ -9,10 +9,6 @@ export default class TodoList {
     form.addEventListener('submit', event => this.onSubmit(event))
   }
 
-  deleteTodoFromPage(index) {
-    data = [...data.slice(0, index), ...data.slice(index + 1)]
-  }
-
   onSubmit(event, data) {
     const input = get('input')
     event.preventDefault()
@@ -43,7 +39,7 @@ export default class TodoList {
   }
 
   renderTodos(data) {
-    data.forEach(todo => {
+    data.forEach((todo, id) => {
       this.todoEl = document.createElement('div')
       this.todoEl.className = 'todo'
       this.todoHtml = `
@@ -53,6 +49,16 @@ export default class TodoList {
        `
       this.todoEl.innerHTML = this.todoHtml
       this.savedTodosContainer.insertAdjacentElement('beforeend', this.todoEl)
+      const buttonDeletesItem = this.todoEl.querySelector('button')
+      buttonDeletesItem.addEventListener('click', () => {
+        this.deleteTodoFromPage(id, data)
+      })
     })
+  }
+
+  deleteTodoFromPage(id, data) {
+    console.log(data)
+    data = [...data.slice(0, id), ...data.slice(id + 1)]
+    console.log(data)
   }
 }
